@@ -23,6 +23,8 @@ it will state as such - then it will pop up the preferences so that you can ente
 the command of your choice. The widget takes command line-style commands for
 windows or Mac OS/X.
 
+I use it fire up the application "Effective File Search".
+
 ![yahoo-logo-small_111](https://github.com/yereverluvinunclebert/Steampunk-MediaPlayer-Ywidget/assets/2788342/c5668608-ab57-4665-a332-3bc9b7e07a9f)
 
 All javascript widgets need an engine to function, in this case the widget uses 
