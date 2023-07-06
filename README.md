@@ -4,10 +4,13 @@ Steampunk magnifier Desktop Yahoo Widget, written in Javascript and XML for the 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+First of all it does not magnify! Sorry about that. A Yahoo widget cannot 
+magnify the windows desktop as the two are not aware of each other.
+
 This magnifier Desktop Widget is an attractive dieselpunk Yahoo widget for your 
-desktop. This Konfabulator/ yahoo widget provides a simple image of a magnifying 
+desktop. This Konfabulator/yahoo widget provides a simple image of a magnifying 
 glass on your desktop. A bit of eye candy that you can use as an interesting icon
-to an application. So, functional and gorgeous at the same time. This Widget is 
+to an application. Functional and gorgeous at the same time. This Widget is 
 a moveable widget that you can move anywhere around the desktop as you require.
 
 ![magnifier-400](https://github.com/yereverluvinunclebert/Magnifier-Ywidget/assets/2788342/718c5769-5d95-4559-8b55-96cbb4ca030f)
