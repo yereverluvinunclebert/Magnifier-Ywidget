@@ -25,7 +25,6 @@ the Yahoo Widget Konfabulator engine. The engine interprets the javascript and
 creates the widget according to the XML description and using the images you 
 provide. Designed and built by me.
 
-
 Built using: 
 
 	RJTextEd Advanced Editor  https://www.rj-texted.se/  
