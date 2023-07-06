@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<name>magnifier</name>
+	<version>1.2</version>
+	<identifier>eeaca540-9c55-11e0-ae24-001B38DD5A8B</identifier>
+	<image usage="dock" src="Resources/security.png"/>
+	<image usage="security" src="Resources/security.png"/>
+	<author name="Dean Beedell" organization="LightQuick" href="http://www.lightquick.co.uk"/>
+	<copyright>(c)2011 LightQuick</copyright>
+	<platform minVersion = "4.5" />
+	<description>Displays a magnifer image that can be made to perform a function.</description>
+	<security>
+          <filesystem>full</filesystem>
+          <http>all</http>
+          <applescript>true</applescript>
+          <command>true</command>
+          <hotkey>false</hotkey>
+	</security>
+
+</metadata>

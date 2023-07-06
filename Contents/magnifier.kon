@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget minimumVersion="4.5">
+<!--
+	 magnifier
+	 Written by: Dean Beedell
+
+-->
+	<about-box>
+		<image>Resources/About.png</image>
+		<about-text font="Times New Roman" color="#000000" style="Bold" size="10" hOffset="120" vOffset="210"
+					data="Version"/>
+		<about-version font="Times New Roman" color="#000000" style="Bold"  size="10" hOffset="155" vOffset="210"/>
+	</about-box>
+
+
+
+	<window visible="true" name="mainWindow" width="540" title="magnifier" height="502" shadow="false">
+		<image visible="true" vOffset="0" name="image" src="Resources/magnifier.png" hOffset="0">
+			<onMultiClick>
+				<![CDATA[
+				if (system.event.clickCount === 2) {
+					//doubleClick();
+				}
+				taskcommand = preferences.imageCmdPref.value;
+				performCommand("click");
+				]]>
+			</onMultiClick>
+			<tooltip>Double click on me...</tooltip>
+		</image>
+		<image visible="true" vOffset="0" name="collar" src="Resources/collar.png" hOffset="0">
+			<tooltip>Click on me to lock the magnifier in place...</tooltip>
+		</image>
+		<image
+			src		= "Resources/pin.png"
+			name		= "pin"
+			hOffset		= "20 "
+			vOffset		= "101 "
+			opacity		= "0"
+		/>
+		
+ 
+  <action trigger="onload">	<![CDATA[
+			include("vitality.js");
+			include("magnifier.js");
+			include("functions.js");
+			include("Resources/licence/licence.js");
+			startup();
+	// ]]> </action>
+	
+  <action trigger="onKeyDown">
+        <![CDATA[
+          if (system.event.keyCode==116) {
+              print("pressing "+system.event.keyCode);
+              reloadWidget();
+          }
+         ]]>
+  </action>
+
+	<action trigger="onPreferencesChanged">
+                changePrefs();
+        </action>
+
+	</window>
+	       <preference hidden="false" description="Check this box if you don't want to see the Licence Conditions again." name="licenceHide" title="Don't Show Licence Again" defaultValue="0" type="checkbox"/>
+   <preference name="soundpref">
+     <title>Sound Control:</title>
+     <type>popup</type>
+     <option>enable</option>
+     <optionValue>enable</optionValue>
+     <option>disable</option>
+     <optionValue>disable</optionValue>
+     <description>Enable or disable sound as you require.</description>
+     <group>settings</group>
+   </preference>
+ 
+   <preference hidden="true" description="" name="widgetLockPref" title="Widget Locked:" defaultValue="0" type="popup">
+     <option>1</option><optionValue>1</optionValue>
+     <option>0</option><optionValue>0</optionValue>
+   </preference>
+ 
+         <preference hidden="true" description="" name="pinhOffsetPref" title="String:" defaultValue="" type="text"/>
+   <preference hidden="true" description="" name="pinvOffsetPref" title="String:" defaultValue="" type="text"/>
+ 
+         <preference name="maxWidthPref" group="settings" title="Widget Size" type="popup"
+     defaultValue="60" description="Changes the total size of the widget. Vary the percentage and the whole widget will alter in size.">
+     <option>150%</option>
+     <optionValue>150</optionValue>
+     <option>140%</option>
+     <optionValue>140</optionValue>
+     <option>130%</option>
+     <optionValue>130</optionValue>
+     <option>120%</option>
+     <optionValue>120</optionValue>
+     <option>110%</option>
+     <optionValue>110</optionValue>
+     <option>100%</option>
+     <optionValue>100</optionValue>
+     <option>90%</option>
+     <optionValue>90</optionValue>
+     <option>80%</option>
+     <optionValue>80</optionValue>
+     <option>70%</option>
+     <optionValue>70</optionValue>
+     <option>60%</option>
+     <optionValue>60</optionValue>
+     <option>50%</option>
+     <optionValue>50</optionValue>
+     <option>40%</option>
+     <optionValue>40</optionValue>
+     <option>30%</option>
+     <optionValue>30</optionValue>
+     <option>20%</option>
+     <optionValue>20</optionValue>
+                 <option>10%</option>
+     <optionValue>10</optionValue>
+                 <option>5%</option>
+     <optionValue>5</optionValue>
+   </preference>
+ 
+   <preference hidden="false" description="Double-clicking on the widget image will run this command. An example command for windows might be : C:\Program Files\Mozilla Thunderbird\thunderbird.exe" name="imageCmdPref" group="settings" title="Widget Command:" type="text"/>
+ 
+   <preference hidden="false" description="You can change the name of the widget at any time to correspond to the name of the function you have assigned to it." name="widgetTooltip" group="settings" title="Widget Tooltip:" type="text"/>
+ 
+	<prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
+    <preference hidden="false" description="Turning on the debugging will provide extra information in the debug window. To obtain the debug window press SHIFT+CTRL simultaneously whilst right clicking on the Yahoo widget systray icon, then select debug from the drop down menu. You will need to restart the widget properly rather than doing a simple restart for debugging information to appear." name="debugflgPref" group="development" title="Debug:" defaultValue="1" type="popup">
+         <option>Debug OFF</option>
+         <optionValue>0</optionValue>
+         <option>Debug ON</option>
+         <optionValue>1</optionValue>
+     </preference>   
+    <preference hidden="false" description="Default command to run when the gauge receives a double-click. %SystemRoot%/system32/perfmon.exe" name="imageCmdPref" group="development" title="Double-Click command" defaultValue="%SystemRoot%/system32/perfmon.exe" type="text"/>
+    <preference hidden="false" description="Development ONLY: Enter your editor path here along with any command line switches required to open this widget in the editor. This function only operates if the widget has been unpacked and DEBUG is ON. " name="imageEditPref" group="development" title="Default Editor:" defaultValue="" type="text"/>
+ 
+</widget>
