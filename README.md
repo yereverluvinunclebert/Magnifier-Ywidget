@@ -11,7 +11,7 @@ This magnifier Desktop Widget is an attractive dieselpunk Yahoo widget for your
 desktop. This Konfabulator/yahoo widget provides a simple image of a magnifying 
 glass on your desktop. A bit of eye candy that you can use as an interesting icon
 to an application. Functional and gorgeous at the same time. This Widget is 
-a moveable widget that you can move anywhere around the desktop as you require.
+a moveable widget that you can move anywhere around the desktop as you require. 
 
 ![magnifier-400](https://github.com/yereverluvinunclebert/Magnifier-Ywidget/assets/2788342/718c5769-5d95-4559-8b55-96cbb4ca030f)
 
