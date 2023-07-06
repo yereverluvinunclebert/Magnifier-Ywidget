@@ -116,9 +116,7 @@
                  <option>5%</option>
      <optionValue>5</optionValue>
    </preference>
- 
-   <preference hidden="false" description="Double-clicking on the widget image will run this command. An example command for windows might be : C:\Program Files\Mozilla Thunderbird\thunderbird.exe" name="imageCmdPref" group="settings" title="Widget Command:" type="text"/>
- 
+  
    <preference hidden="false" description="You can change the name of the widget at any time to correspond to the name of the function you have assigned to it." name="widgetTooltip" group="settings" title="Widget Tooltip:" type="text"/>
  
 	<prefGroup name="development" order="8" icon="Resources/images/development-icon.png" title="Development"/>
