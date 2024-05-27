@@ -4,6 +4,8 @@ Steampunk magnifier Desktop Yahoo Widget, written in Javascript and XML for the 
 Widget (Konfabulator) Engine. Created for XP, Vista, Win7, 8, 10+ as well as the 
 Apple Mac.
 
+This widget is now deprecated and is retained for historical reasons only, it still works but time moves ever onward - please use the VB6 version instead that you will find here: https://github.com/yereverluvinunclebert/Magnifier-VB6-Widget
+
 First of all it does not magnify! Sorry about that. A Yahoo widget cannot 
 magnify the windows desktop as the two are not aware of each other.
 
